@@ -1,0 +1,89 @@
+import { materialPhysical } from "./mesh-factory/material-factory";
+
+export const sizes = {
+  width: window.innerWidth,
+  height: window.innerHeight,
+};
+
+const DEFAULT_VISIBLE = true;
+const DEFAULT_HELPER_VISIBLE = true;
+
+// AXES HELPER
+export const AXES_HELPER_SIZE_DEFAULT = 2;
+
+// GEOMETRY
+export const BOX_SIZE = 0.75;
+export const BOX_POSITION_X_DEFAULT = 0;
+export const BOX_POSITION_Y_DEFAULT = 0;
+export const BOX_POSITION_Z_DEFAULT = 0;
+
+export const SPHERE_RADIUS = 0.5;
+export const SPHERE_POSITION_X_DEFAULT = -1.5;
+export const SPHERE_POSITION_Y_DEFAULT = 0;
+export const SPHERE_POSITION_Z_DEFAULT = 0;
+
+export const TORUS_RADIUS = 0.3;
+export const TORUS_POSITION_X_DEFAULT = 1.5;
+export const TORUS_POSITION_Y_DEFAULT = 0;
+export const TORUS_POSITION_Z_DEFAULT = 0;
+
+export const FLOOR_WIDTH = 50;
+export const FLOOR_HEIGHT = 50;
+export const FLOOR_POSITION_X_DEFAULT = 0;
+export const FLOOR_POSITION_Y_DEFAULT = -0.65;
+export const FLOOR_POSITION_Z_DEFAULT = 0;
+
+// MATERIAL
+export const defaultMaterial = materialPhysical;
+
+// DIRECTIONNAL LIGHT
+export const DIRECTIONNAL_LIGHT_COLOR_DEFAULT = 0x78ff00;
+export const DIRECTIONNAL_LIGHT_INTENSITY_DEFAULT = 0.5;
+export const DIRECTIONNAL_LIGHT_POSITION_X_DEFAULT = 1.6;
+export const DIRECTIONNAL_LIGHT_POSITION_Y_DEFAULT = 2.3;
+export const DIRECTIONNAL_LIGHT_POSITION_Z_DEFAULT = 0;
+export const DIRECTIONNAL_LIGHT_IS_VISIBLE_DEFAULT = DEFAULT_VISIBLE;
+
+// DIRECTIONNAL LIGHT HELPER
+export const DIRECTIONNAL_LIGHT_HELPER_IS_VISIBLE_DEFAULT =
+  DEFAULT_HELPER_VISIBLE;
+export const DIRECTIONNAL_LIGHT_HELPER_SIZE_DEFAULT = 1;
+
+// SPOT LIGHT
+export const SPOT_COLOR_DEFAULT = 0x78ff00;
+export const SPOT_INTENSITY_DEFAULT = 0.5;
+export const SPOT_DISTANCE_DEFAULT = 10;
+export const SPOT_ANGLE_DEFAULT = Math.PI * 0.1;
+export const SPOT_PENUMBRA_DEFAULT = 0.25;
+export const SPOT_DECAY_DEFAULT = 1;
+export const SPOT_POSITION_X_DEFAULT = 1;
+export const SPOT_POSITION_Y_DEFAULT = 2;
+export const SPOT_POSITION_Z_DEFAULT = 3;
+export const SPOT_IS_VISIBLE_DEFAULT = true;
+
+// SPOT LIGHT HELPER
+export const SPOT_HELPER_IS_VISIBLE_DEFAULT = DEFAULT_HELPER_VISIBLE;
+
+// SHADOWS
+export const IS_SHADOWS_ENABLED = true;
+export const IS_CUBE_CAST_SHADOWS = true;
+export const IS_SPHERE_CAST_SHADOWS = true;
+export const IS_TORUS_CAST_SHADOWS = true;
+export const IS_SPOT_LIGHT_CAST_SHADOWS = true;
+export const IS_DIRECTIONNAL_LIGHT_CAST_SHADOWS = true;
+export const IS_PLANE_RECEIVE_SHADOWS = true;
+
+// DIRECTIONNAL LIGHT SHADOWS
+export const DIRECTIONNAL_LIGHT_SHADOWS_HELPER_IS_VISIBLE_DEFAULT = true;
+export const DIRECTIONNAL_LIGHT_SHADOWS_WIDTH_DEFAULT = 1024;
+export const DIRECTIONNAL_LIGHT_SHADOWS_HEIGHT_DEFAULT = 1024;
+export const DIRECTIONNAL_LIGHT_SHADOWS_NEAR_DEFAULT = 10;
+export const DIRECTIONNAL_LIGHT_SHADOWS_FAR_DEFAULT = 10;
+
+// SPOT LIGHT SHADOWS
+export const SPOT_LIGHT_SHADOWS_HELPER_IS_VISIBLE_DEFAULT = true;
+export const SPOT_LIGHT_SHADOWS_WIDTH_DEFAULT = 1024;
+export const SPOT_LIGHT_SHADOWS_HEIGHT_DEFAULT = 1024;
+export const SPOT_LIGHT_SHADOWS_NEAR_DEFAULT = 10;
+export const SPOT_LIGHT_SHADOWS_FAR_DEFAULT = 10;
+export const SPOT_LIGHT_SHADOWS_FOV_DEFAULT = 30;
