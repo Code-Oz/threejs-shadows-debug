@@ -24,9 +24,6 @@ export const spotLightGuiFactory = (folder, light) => {
   shadowNearGUI(folder, light, "shadows near");
   shadowFarGUI(folder, light, "shadows far");
   fovGUI(folder, light, "shadows fov");
-
-  positionGui(folder, light.position);
-  positionGui(folder, light.target.position, "target");
 };
 
 export const spotAreaHelperGuiFactory = (folder, lightHelper) => {
